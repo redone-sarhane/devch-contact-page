@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact page</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mainColor: "#4036A9",
+              secColor: "#111729",
+              terColor: "#CDD5E0",
+              whiteOff1: "#F8FAFC",
+              whiteOff2: "#ffffff",
+            },
+            spacing: {
+              18: "4.3rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body style="font-family: 'Be Vietnam Pro', sans-serif">
+    <div class="">
+      <nav class="flex items-center pl-5 mb-12 h-20 lg:pl-16 xl:pl-20">
+        <img src="img/logo.png" alt="" srcset="" class="max-w-28" />
+      </nav>
+      <main>
+        <section class="heading text-whiteOff2 text-center">
+          <h1
+            class="text-5xl font-bold max-w-[15ch] mr-auto ml-auto mb-5 xl:text-7xl xl:leading-tight"
+          >
+            Interested in our business pricing?
+          </h1>
+          <h2
+            class="text-xl max-w-[30ch] mr-auto ml-auto mb-20 xl:text-4xl xl:leading-normal"
+          >
+            Fill out the form to view details and we’ll contact you as soon as
+            possible.
+          </h2>
+        </section>
+        <form action="" class="form | flex justify-center pr-4 pl-4">
+          <div
+            class="form__container | bg-terColor bg-opacity-40 rounded-3xl p-8 w-full lg:grid lg:grid-cols-2 lg:gap-x-5 xl:max-w-[1300px]"
+          >
+            <!-- Personal Name -->
+            <div class="form__group | mb-10">
+              
+              <label
+                for="personal-name"
+                class="form__label | block text-whiteOff2 mb-2"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="personal-name"
+                class="block bg-whiteOff2 pr-7 pl-7 h-18 w-full rounded-2xl placeholder:text-terColor"
+                placeholder="Ethan Johnson"
+              />
+            </div>
+
+            <!-- Company Email -->
+            <div class="form__group | mb-10">
+              <label
+                for="company-email"
+                class="form__label | block text-whiteOff2 mb-2"
+                >Company Email</label
+              >
+              <input
+                type="email"
+                id="company-email"
+                class="block bg-whiteOff2 pr-7 pl-7 h-18 w-full rounded-2xl placeholder:text-terColor"
+                placeholder="Ethan Johnson"
+              />
+            </div>
+
+            <!-- Company Size -->
+            <div class="form__group | mb-10">
+              <label
+                for="company-size"
+                class="form__label | block text-whiteOff2 mb-2"
+              >
+                Company Email
+              </label>
+
+              <select
+                name=""
+                id="company-size"
+                class="form__select | block bg-whiteOff2 pr-7 pl-7 h-18 w-full rounded-2xl font-semibold"
+              >
+                <option value="">0-10 employees</option>
+                <option value="">10-50 employees</option>
+                <option value="" selected>50-100 employees</option>
+                <option value="">100+ employees</option>
+              </select>
+            </div>
+
+            <!-- Subject -->
+            <div class="form__group | mb-10">
+              <label
+                for="subject"
+                class="form__label | block text-whiteOff2 mb-2"
+              >
+                Subject
+              </label>
+
+              <select
+                name=""
+                id="subject"
+                class="form__select | block bg-whiteOff2 pr-7 pl-7 h-18 w-full rounded-2xl font-semibold"
+              >
+                <option value="">designing web UI/UX</option>
+                <option value="">Building portfolios</option>
+                <option value="" selected>Building Landing pages</option>
+                <option value="">Building ecomerce websites</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form__group | mb-10 lg:col-span-full">
+              <label
+                for="message"
+                class="form__label | block text-whiteOff2 mb-2"
+              >
+                Message
+              </label>
+
+              <textarea
+                name=""
+                id="message"
+                class="form__message | block bg-whiteOff2 p-7 h-48 resize-none w-full rounded-2xl font-semibold"
+              >
+50-100 employees</textarea
+              >
+            </div>
+
+            <button
+              name=""
+              type="submit"
+              id="subject"
+              class="form__submit | block bg-whiteOff2 text-mainColor text-[1.4rem] pr-7 pl-7 mb-20 w-full h-18 rounded-2xl font-semibold lg:col-span-full"
+            >
+              Contact Sales
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
